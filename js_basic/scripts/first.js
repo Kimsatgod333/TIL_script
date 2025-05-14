@@ -93,3 +93,4 @@ console.log(`${dan99}X6=${dan99*6}`);
 console.log(`${dan99}X7=${dan99*7}`);
 console.log(`${dan99}X8=${dan99*8}`);
 console.log(`${dan99}X9=${dan99*9}`);
+console.log('---------------------250514');
