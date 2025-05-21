@@ -128,6 +128,6 @@ console.log(b, typeof b); //10 string
 // 결과예) 구입할 물건은 ?개 이고 이벤트상품 ?개가 추가됩니다. 총 결제 가격은 ?원입니다.
 let price = 15700;
 const productQa = Number(prompt('구입할 개수를 입력하세요'));
-const eventNum = productQa-1;
+const eventNum = productQa;
 const total = price * productQa;
 console.log(`구입할 물건은 ${productQa}개 이고 이벤트상품 ${eventNum}개가 추가됩니다. 총 결제 가격은 ${total}원입니다.`);
