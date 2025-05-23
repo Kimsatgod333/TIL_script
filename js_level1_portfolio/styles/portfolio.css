@@ -1,0 +1,8 @@
+main {}
+main .design {}
+main .design a {}
+main .design a:nth-child() {}
+main .design a img {}
+.popup_bg {}
+.popup_bg .contents {}
+.popup_bg .contents img {}
