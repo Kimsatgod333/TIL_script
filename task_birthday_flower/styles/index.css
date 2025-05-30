@@ -1,0 +1,17 @@
+main {
+    width:480px; height:100vh;
+    margin:0 auto;
+    padding:0 15px;
+    text-align:center;
+    background:aqua;
+}
+main h1 {margin-bottom:25px;}
+main .contents_wrap {}
+main .contents_wrap > * {margin-bottom:25px;}
+main .contents_wrap .birthday {}
+main .contents_wrap .birthday input {}
+main .contents_wrap .birthday input[name=years] {width:150px;}
+main .contents_wrap .birthday input[name=month] {width:70px;}
+main .contents_wrap .birthday input[name=days] {width:70px;}
+main .contents_wrap #answer_btn {}
+main .contents_wrap .answer {}
