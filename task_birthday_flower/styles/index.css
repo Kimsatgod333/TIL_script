@@ -36,6 +36,8 @@ main .contents_wrap .flower_answer {
     color:#751e40;
     line-height:1.5;
     border-radius:5px;
+    opacity:0;
+    transition:all 0.5s linear;
 }
 main .contents_wrap .flower_answer em {
     color:#751e40;
@@ -44,7 +46,8 @@ main .contents_wrap .flower_answer em {
 main .contents_wrap .flower_img {
     width:100%;
     height:550px;
-    transition:all 0.5s linear;
+    opacity:0;
+    transition:all 0.7s linear;
 }
 @keyframes intro {
     from {transform:translateY(30px); opacity:0;}
