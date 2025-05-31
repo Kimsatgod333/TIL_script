@@ -60,8 +60,9 @@ console.log(birthdayMonth, flowerAnswer, answerBtn)
 answerBtn.addEventListener('click', function(){
     yourFlower(birthdayMonth.value);
 })
-birthdayDays.addEventListener('click', dayMonth)
+birthdayYears.addEventListener('click', dayMonth)
 birthdayMonth.addEventListener('click', dayMonth)
+birthdayDays.addEventListener('click', dayMonth)
 function yourFlower(num){
     flowerAnswer.style.opacity = '1'
     flowerImg.style.opacity = '1'
@@ -80,5 +81,8 @@ function dayMonth(){
     }
     if(birthdayDays.value < 1){
         birthdayDays.value = 1;
+    }
+    if(birthdayYears.value < 1){
+        birthdayYears.value = 1;
     }
 }
