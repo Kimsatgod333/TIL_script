@@ -1,17 +1,56 @@
 main {
-    width:480px; height:100vh;
+    width:440px; height:100vh;
     margin:0 auto;
-    padding:0 15px;
+    padding:80px 15px;
     text-align:center;
-    background:aqua;
+    background:url(../images/bg_lobi.jpg);
+    animation: intro 0.3s linear;
 }
-main h1 {margin-bottom:25px;}
+main h1 {
+    margin-bottom:25px;
+    animation:intro 0.4s 0.5s linear both;
+    font-size:1.5rem; font-weight:700;
+    padding:20px 30px;
+    background-color:bisque; color:#f3771f;
+    border-radius:15px;
+}
 main .contents_wrap {}
 main .contents_wrap > * {margin-bottom:25px;}
 main .contents_wrap .birthday {}
-main .contents_wrap .birthday input {}
+main .contents_wrap .birthday input {
+    padding:0 7px;
+}
 main .contents_wrap .birthday input[name=years] {width:150px;}
 main .contents_wrap .birthday input[name=month] {width:70px;}
 main .contents_wrap .birthday input[name=days] {width:70px;}
-main .contents_wrap #answer_btn {}
-main .contents_wrap .answer {}
+main .contents_wrap #answer_btn {
+    font-size:1.25rem;
+    font-weight:700;
+    width:100%;
+    padding:15px 0;
+    background-color:#08fd57; color:#073616;
+    border-radius:30px;
+}
+main .contents_wrap .flower_answer {
+    background-color:#aacddd;
+    color:#751e40;
+    line-height:1.5;
+    border-radius:5px;
+}
+main .contents_wrap .flower_answer em {
+    color:#751e40;
+    font-weight:700;
+}
+main .contents_wrap .flower_img {
+    width:100%;
+    height:550px;
+    transition:all 0.5s linear;
+}
+@keyframes intro {
+    from {transform:translateY(30px); opacity:0;}
+    to {transform:translateY(0); opacity:1;}
+}
+@keyframes img_ani {
+    from {opacity:0;}
+    to {opacity:1;}
+}
