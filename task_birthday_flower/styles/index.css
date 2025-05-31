@@ -47,7 +47,7 @@ main .contents_wrap .flower_img {
     width:100%;
     height:550px;
     opacity:0;
-    transition:all 0.7s linear;
+    transition:all 0.7s 0.3s linear;
 }
 @keyframes intro {
     from {transform:translateY(30px); opacity:0;}
