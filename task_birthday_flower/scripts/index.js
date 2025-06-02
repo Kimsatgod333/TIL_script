@@ -63,12 +63,20 @@ answerBtn.addEventListener('click', function(){
 birthdayYears.addEventListener('click', dayMonth)
 birthdayMonth.addEventListener('click', dayMonth)
 birthdayDays.addEventListener('click', dayMonth)
+birthdayYears.addEventListener('keydown', dayMonth)
+birthdayMonth.addEventListener('keydown', dayMonth)
+birthdayDays.addEventListener('keydown', dayMonth)
 function yourFlower(num){
     flowerAnswer.style.opacity = '1'
     flowerImg.style.opacity = '1'
     flowerAnswer.innerHTML = `${birthdayFlower[num - 1].month}월 당신의 탄생화는 <em>${birthdayFlower[num - 1].flower}</em>입니다.<br>${birthdayFlower[num - 1].flower}의 꽃말은 <em>${birthdayFlower[num - 1].content}</em>입니다.`
     return flowerImg.style.background = `url(./images/bg${num}.jpg) no-repeat center / cover`
 }
+birthdayMonth.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+        yourFlower(birthdayMonth.value)
+    }
+})
 function dayMonth(){
     if(birthdayMonth.value > 12){
         birthdayMonth.value = 12;

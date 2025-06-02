@@ -20,6 +20,9 @@ main .contents_wrap .birthday {}
 main .contents_wrap .birthday input {
     padding:0 7px;
 }
+main .contents_wrap .birthday span {
+    color:#fff;
+}
 main .contents_wrap .birthday input[name=years] {width:150px;}
 main .contents_wrap .birthday input[name=month] {width:70px;}
 main .contents_wrap .birthday input[name=days] {width:70px;}
@@ -45,7 +48,7 @@ main .contents_wrap .flower_answer em {
 }
 main .contents_wrap .flower_img {
     width:100%;
-    height:550px;
+    height:350px;
     opacity:0;
     transition:all 0.7s 0.3s linear;
 }
