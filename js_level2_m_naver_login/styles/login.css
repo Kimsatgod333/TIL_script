@@ -43,7 +43,6 @@ main .login_wrap .login_inner #login_frm .id_pw_wrap {
     border:1px solid #ddd;
     border-radius:8px;
     overflow:hidden;
-    margin-bottom:20px;
 }
 main .login_wrap .login_inner #login_frm .id_pw_wrap input {
     padding:15px 10px;
