@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 함수 2 | JS</title>
+    <script src="./scripts/timer2.js" defer></script>
+    <link rel="stylesheet" href="../js_level2_nav_clone/styles/reset.css">
+    <style>
+        .slide_wrap {
+            width:400px;
+            overflow:hidden;
+            margin:0 auto;
+        }
+        .slide_wrap .slide_container {
+            display:flex;
+            flex-flow:row-reverse nowrap;
+            width:max-content;
+            transform:translateX(-800px);
+            transition:all 0.3s;
+        }
+        .slide_wrap .slide_container .slide {
+            width:400px; height:300px; font-size:3rem;
+        }
+        .slide_wrap .slide_container .slide1 {background:orange}
+        .slide_wrap .slide_container .slide2 {background:red}
+        .slide_wrap .slide_container .slide3 {background:cyan;}
+    </style>
+</head>
+<body>
+    <!-- 슬라이드 작성 규칙 -->
+    <!-- 슬라이드 전체 그룹(개별슬라이드부모(개별슬라이드*다수)) -->
+    <div class="slide_wrap"> <!-- 전체 그룹 -->
+        <div class="slide_container"><!-- 개별슬라이드부모(실제이동) -->
+            <div class="slide slide1">1</div><!-- 개별슬라이드 -->
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+</body>
+</html>
