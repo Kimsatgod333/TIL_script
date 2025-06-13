@@ -22,10 +22,7 @@ setInterval(numTimer, 2000); */
 const slideContainer = document.querySelector('.slide_container');
 function slideTimer(){
     num--
+    if(num < 0){num = 2;}
     slideContainer.style.transform = `translateX(-${num*400}px)`
-    if(num < 0){
-        num = 2;
-        slideContainer.style.transform = `translateX(-${num*400}px)`
-    }
 }
 setInterval(slideTimer, 3000);
